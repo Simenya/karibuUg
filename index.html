@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>malMart</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-transparent text-light" data-bs-toggle="modal"
+                            data-bs-target="#bookingForm">
+                            Book
+                        </button>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Destinations</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Services</a></li>
+                            
+                           
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section>
+
+        <div id="carouselExampleCaptions" class="carousel slide pt-5 mt-1" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./files/slider1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./files/slider2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./files/slider3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h3 class="text-center pt-5 pb-2 fw-bold">ABOUT US</h3>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente delectus sint voluptatibus facilis perspiciatis illum fuga distinctio quo? Perferendis fugiat quia dicta provident? Distinctio mollitia, voluptate suscipit deserunt facilis natus, voluptatibus id optio ducimus magni dolor. Accusamus perferendis, aspernatur pariatur neque repellat, excepturi ad eos quis illo, harum doloribus tempore!</P>
+        
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente delectus sint voluptatibus facilis perspiciatis illum fuga distinctio quo? Perferendis fugiat quia dicta provident? Distinctio mollitia, voluptate suscipit deserunt facilis natus, voluptatibus id optio ducimus magni dolor. Accusamus perferendis, aspernatur pariatur neque repellat, excepturi ad eos quis illo, harum doloribus tempore!</P>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2 class="text-center pt-5 fw-bold">OUR DESTINATIONS</h2>
+            <div class="row ">
+                <div class="col-md-3 p-5">
+                    <div class="card" style="width: 300px ;">
+                        <img src="./files/img2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                data-bs-target="#bookingForm">Book</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-5">
+                    <div class="card" style="width: 300px ;">
+                        <img src="./files/img2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary w-100">Book</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-5">
+                    <div class="card" style="width: 300px ;">
+                        <img src="./files/img2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary w-100">Book</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-5">
+                    <div class="card" style="width: 300px ;">
+                        <img src="./files/img2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary w-100">Book</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mb-5">
+            <div class="row mx-4">
+                <div class="col-md-6">
+                    <img src="./files/img3.jpg" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <p class="text-center ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minima reiciendis soluta! Veritatis
+                        quas vitae nesciunt? Minus, consectetur repellendus quae saepe culpa rem in exercitationem
+                        labore quaerat enim veniam officia aliquam, dolore et earum, praesentium perferendis incidunt
+                        recusandae placeat fugit.
+                    </p>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <p class="text-center ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minima reiciendis soluta! Veritatis
+                        quas vitae nesciunt? Minus, consectetur repellendus quae saepe culpa rem in exercitationem
+                        labore quaerat enim veniam officia aliquam, dolore et earum, praesentium perferendis incidunt
+                        recusandae placeat fugit.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="./files/img6.jpg" alt="" class="img-fluid rounded">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="bookingForm" tabindex="-1" aria-labelledby="bookingFormLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingFormLabel">Make Reservation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-success">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
